@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="health-info.html">Health Info</a></li>
+                <li><a href="BMI Calculator.html">BMI Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Body Mass Index (BMI) is a person's weight in kilograms divided by the square of their height in meters. It provides a rough guide to whether your weight is within the normal range.</p>
+        
+        <form id="bmi-form">
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="height" placeholder="Height (cm or m)">
+            <button type="button" onclick="calculateBMI()">Calculate</button>
+        </form>
+        
+        <div id="bmi-result"></div>
+        
+        <p><strong>BMI Categories:</strong></p>
+        <ul>
+            <li>Underweight: BMI < 18.5</li>
+            <li>Normal weight: BMI 18.5–24.9</li>
+            <li>Overweight: BMI 25–29.9</li>
+            <li>Obesity: BMI 30 or greater</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Health Awareness</p>
+    </footer>
+    <script src="bmi-calculator.js"></script>
+</body>
+</html>
